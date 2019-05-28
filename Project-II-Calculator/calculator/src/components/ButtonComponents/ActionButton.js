@@ -2,7 +2,7 @@ import React from 'react';
 import './Button.scss';
 
 const ActionButton = () => {
-	return <div>This is an action button.</div>;
+	return <div className="action-button">Action Buttons</div>;
 };
 
 export default ActionButton;
