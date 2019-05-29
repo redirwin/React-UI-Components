@@ -1,0 +1,72 @@
+.button-container {
+	display: flex;
+	font-size: 3rem;
+
+	@media screen and (max-width: 350px) {
+		font-size: 2rem;
+	}
+
+	.number-buttons-container {
+		width: 75%;
+		display: flex;
+		flex-direction: row-reverse;
+		flex-wrap: wrap;
+
+		.num-button {
+			width: 33%;
+		}
+
+		.clear,
+		.zero {
+			width: 100%;
+		}
+
+		.num-button,
+		.clear,
+		.zero {
+			border-right: 1px solid black;
+
+			@media screen and (max-width: 800px) {
+				border: 0;
+			}
+		}
+	}
+
+	.action-buttons-container {
+		width: 25%;
+		display: flex;
+		flex-direction: column;
+
+		.action-button {
+			height: 100px;
+			background-color: #a0001e;
+			color: white;
+		}
+	}
+
+	.num-button,
+	.clear,
+	.zero,
+	.action-button {
+		border-bottom: 1px solid black;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: background-color 0.25s;
+	}
+
+	.num-button:hover,
+	.clear:hover,
+	.zero:hover {
+		background-color: #a0001e;
+		color: white;
+		cursor: pointer;
+	}
+
+	.action-button:hover {
+		color: black;
+		background-color: white;
+		cursor: pointer;
+	}
+}
